@@ -1,0 +1,76 @@
+#main {
+	display: grid;
+	font-size: 1.5vw;
+	width: 100%;
+	background-color: LightGray;
+	grid-template-rows: auto auto auto auto;
+	grid-template-areas: "header"
+						 "img"
+						 "article"
+						 "footer";
+}
+
+/*------------------------------------HEADER---------------------------------------------------*/
+
+header {
+	grid-area: header;
+	justify-self: center;
+	display: grid;
+	grid-template-rows: auto auto;
+	grid-template-areas: "title"
+						 "below-title";
+}
+
+#title {
+	grid-area: title;
+	justify-self: center;
+}
+
+#below-title {
+	grid-area: below-title;
+	justify-self: center;
+}
+
+
+/*------------------------------------IMG---------------------------------------------------*/
+
+#img-div {
+	grid-area: img;
+	justify-self: center;
+	display: grid;
+	grid-template-rows: auto auto;
+	grid-template-areas: "image"
+						 "caption";
+}
+
+#image {
+	grid-area: image;
+	justify-self: center;
+}
+
+#img-caption {
+	grid-area: caption;
+	justify-self: center;
+	
+}
+
+
+/*------------------------------------ARTICLE---------------------------------------------------*/
+
+#tribute-info {
+	grid-area: article;
+	justify-self: center;
+}
+
+
+/*------------------------------------FOOTER---------------------------------------------------*/
+
+footer {
+	grid-area: footer;
+	justify-self: center;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+
